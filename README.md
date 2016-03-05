@@ -5,7 +5,7 @@ Custom Handlebars Helper to improve Pagination in Ghost.
 
 ##Install
 ```
-npm install mocha
+npm install ghost-pagination
 ```
 ##Usage
 Edit Ghost config.js
