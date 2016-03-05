@@ -1,5 +1,5 @@
 # Ghost - Handlebars Pagination Helper
-Custom Handlebars Helper to improve Pagination in Ghost.
+Custom Handlebars Helper to improve Pagination in Ghost. Based on [Handlebars Paginate!](https://github.com/olalonde/handlebars-paginate)
 
 ![preview](https://github.com/danielr18/ghost-pagination/raw/master/preview.jpg)
 
