@@ -9,7 +9,7 @@
         {{else}}
             <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
         {{/if}}
-        {{#pagination page pages limit="5"}}
+        {{#paginate page pages limit="5"}}
             {{#if first}}
                 <li {{#if active}} class="active" {{/if}}><a href="{{page_url n}}">{{n}}</a></li>
                 {{#if ellipsis}}
@@ -25,7 +25,7 @@
                 {{/if}}
                 <li {{#if active}} class="active" {{/if}}><a href="{{page_url n}}">{{n}}</a></li>
             {{/if}}
-        {{/pagination}}
+        {{/paginate}}
         {{#if next}}
             <li><a href="{{page_url next}}"><i class="material-icons">chevron_right</i></a></li>
         {{else}}

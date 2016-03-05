@@ -14,16 +14,18 @@ Ghost config.js
   var pagination = require('ghost-pagination');
   var hbs = require('express-hbs');
   /* ... */
-  hbs.registerHelper('pagination', pagination);
+  hbs.registerHelper('paginate', pagination);
   /* ... */  
 ```
+
+Include limit attribute if you wish to restrict the number of pages, that appear between the first one and last one.
 
 partials/pagination.hbs
 
 ```html
 <div class="pagination center">
   <ul>      
-      {{#pagination page pages limit="5"}}
+      {{#paginate page pages limit="5"}}
           {{#if first}}
               <li {{#if active}} class="active" {{/if}}><a href="{{page_url n}}">{{n}}</a></li>
               {{#if ellipsis}}
@@ -39,7 +41,7 @@ partials/pagination.hbs
               {{/if}}
               <li {{#if active}} class="active" {{/if}}><a href="{{page_url n}}">{{n}}</a></li>
           {{/if}}
-      {{/pagination}}
+      {{/paginate}}
   </ul>
 </div>
 ```
