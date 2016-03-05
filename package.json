@@ -1,0 +1,29 @@
+{
+  "name": "ghost-pagination",
+  "version": "0.1.0",
+  "description": "Custom Handlebars Helper to improve Pagination in Ghost",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielr18/ghost-pagination.git"
+  },
+  "keywords": [
+    "handlebars",
+    "paginate",
+    "pagination",
+    "ghost"
+  ],
+  "author": "Daniel Reinoso <danielreinosodeveloper@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.4"
+  },
+  "bugs": {
+    "url": "https://github.com/danielr18/ghost-pagination/issues"
+  },
+  "homepage": "https://github.com/danielr18/ghost-pagination#readme"
+}
