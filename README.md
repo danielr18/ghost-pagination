@@ -18,8 +18,6 @@ Ghost config.js
   /* ... */  
 ```
 
-Include limit attribute if you wish to restrict the number of pages, that appear between the first one and last one.
-
 partials/pagination.hbs
 
 ```html
@@ -45,6 +43,9 @@ partials/pagination.hbs
   </ul>
 </div>
 ```
+
+Include limit attribute if you wish to restrict the number of pages, that appear between the first one and last one.
+
 You can easily include previous and next links with Ghost built-in Pagination attributes. Refer to [Handlebars Template Example](examples/pagination.hbs).
 
 ## License
