@@ -1,5 +1,5 @@
 # Ghost - Handlebars Pagination Helper
-Custom Handlebars Helper to improve Pagination in Ghost. Based on [Handlebars Paginate!](https://github.com/olalonde/handlebars-paginate)
+Custom Handlebars Helper to improve Pagination in Ghost. Based on [Handlebars Paginate](https://github.com/olalonde/handlebars-paginate).
 
 ![preview](https://github.com/danielr18/ghost-pagination/raw/master/preview.jpg)
 
@@ -8,7 +8,7 @@ Custom Handlebars Helper to improve Pagination in Ghost. Based on [Handlebars Pa
 npm install ghost-pagination
 ```
 ##Usage
-Edit Ghost config.js
+Ghost config.js
 ```javascript
   /* ... */  
   var pagination = require('ghost-pagination');
@@ -43,7 +43,7 @@ partials/pagination.hbs
   </ul>
 </div>
 ```
-You can easily include previous and next links with Ghost built-in Pagination attributes. Refer to [Handlebars Template Example!](examples/pagination.hbs)
+You can easily include previous and next links with Ghost built-in Pagination attributes. Refer to [Handlebars Template Example](examples/pagination.hbs).
 
 ## License
 
