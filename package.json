@@ -20,10 +20,13 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^2.2.5",
-    "sinon": "^1.15.4"
+    "sinon": "^1.17.3"
   },
   "bugs": {
     "url": "https://github.com/danielr18/ghost-pagination/issues"
   },
-  "homepage": "https://github.com/danielr18/ghost-pagination#readme"
+  "homepage": "https://github.com/danielr18/ghost-pagination#readme",
+  "directories": {
+    "test": "test"
+  }
 }

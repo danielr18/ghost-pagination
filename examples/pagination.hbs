@@ -1,0 +1,35 @@
+{{!-- Pagination --}}
+{{!-- Uses material-icons --}}
+{{!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> --}}
+
+<div class="pagination center">
+    <ul>
+        {{#if prev}}
+            <li><a href="{{page_url prev}}"><i class="material-icons">chevron_left</i></a></li>
+        {{else}}
+            <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
+        {{/if}}
+        {{#paginate page pages limit="5"}}
+            {{#if first}}
+                <li {{#if active}} class="active" {{/if}}><a href="{{page_url n}}">{{n}}</a></li>
+                {{#if ellipsis}}
+                    <li class="pagination-ellipsis"><i class="material-icons">more_horiz</i></li>
+                {{/if}}
+            {{/if}}
+            {{#if middle}}
+                <li {{#if active}} class="active" {{/if}}><a href="{{page_url n}}">{{n}}</a></li>
+            {{/if}}
+            {{#if last}}
+                {{#if ellipsis}}
+                    <li class="pagination-ellipsis"><i class="material-icons">more_horiz</i></li>
+                {{/if}}
+                <li {{#if active}} class="active" {{/if}}><a href="{{page_url n}}">{{n}}</a></li>
+            {{/if}}
+        {{/paginate}}
+        {{#if next}}
+            <li><a href="{{page_url next}}"><i class="material-icons">chevron_right</i></a></li>
+        {{else}}
+            <li class="disabled"><a><i class="material-icons">chevron_right</i></a></li>
+        {{/if}}
+    </ul>
+</div>
